@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {Helmet} from "react-helmet";
-import './register.css'
+// import './register.css'
 
 function Register(props){
 
