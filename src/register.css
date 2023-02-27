@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('login_bg7.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 530px;
+    background: rgba(232,138,150,0.8);
+    /* border: 2px solid rgba(255, 255, 255, 0.5); */
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+h2{
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    margin-top: 30px;
+    width: 300px;
+    border-bottom: 2px solid white;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus~label,
+input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    font-size: 1rem;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 0px 35px 0px 5px;
+}
+.input-box ion-icon{
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.invalid{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 1rem;
+    font-weight:bold;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+.forgot{
+    margin: 15px 0px 15px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+.forgot label input{
+    margin-right: 3px;
+}
+.forgot a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top:15px;
+}
+button:hover{
+    box-shadow: 0px 0px 10px 3px white;
+}
+.register{
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 20px 0px 0px;
+}
+.register p a{
+    color: rgba(232,138,150,1);
+    padding: 0px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.register p a:hover{
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px 3px white;
+}
